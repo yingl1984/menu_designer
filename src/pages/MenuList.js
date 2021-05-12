@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 import { NotesContext } from '../context/NotesContext';
 // import './PropertyList.css';
 
-class PropertyList extends Component {  
+class MenuList extends Component {  
     render() { 
         return(
         <NotesContext.Consumer>
@@ -16,8 +16,8 @@ class PropertyList extends Component {
                             <div className='List-cards' key={p.id}>
                                 <div className='Card'>
                                     <button className='List-add-button' onClick={()=>removeNote(id)}>remove</button>
-                                    <NavLink to={`/note/${id}`} className="link" style={{ textDecoration: 'none' }}>                   
-                                        Address: {address}, State: {state}, Zip Code: {zipcode}                                                                    
+                                    <NavLink to={`/dish/${id}`} className="link" style={{ textDecoration: 'none' }}>                   
+                                        Dish Name: {address}, Picture: {state}                                                                    
                                     </NavLink>
                                 </div>   
                             </div>
@@ -28,7 +28,7 @@ class PropertyList extends Component {
                         <div className="notesList">
                             <div className="List-header">
                                     <h2>
-                                        Property List
+                                        Menu List
                                     </h2>
                             </div>
                             <section className="List">
@@ -45,4 +45,4 @@ class PropertyList extends Component {
 }
 
 
-export default PropertyList;
+export default MenuList;

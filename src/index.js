@@ -6,21 +6,21 @@ import App from './App';
 import Welcome from './pages/Welcome'
 import reportWebVitals from './reportWebVitals';
 import NotesContextProvider from './context/NotesContext';
-import NoteView from './components/NoteView'
-import Addnote from './pages/Addnote'
+import DishDetails from './components/DishDetails'
+import AddDish from './pages/AddDish'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
         <Route path='/' component={Welcome} exact={true}/>
-        <Route exact path='/notebook'>
+        <Route exact path='/menu'>
           <NotesContextProvider>
            <App />
           </NotesContextProvider>
         </Route>
-        <Route path="/addNote" render={(props) => <NotesContextProvider><Addnote {...props}/></NotesContextProvider>} />
-        <Route path="/note/:id" render={(props)=>  <NotesContextProvider><NoteView {...props} /></NotesContextProvider>} />
+        <Route path="/addDish" render={(props) => <NotesContextProvider><AddDish {...props}/></NotesContextProvider>} />
+        <Route path="/dish/:id" render={(props)=>  <NotesContextProvider><DishDetails {...props} /></NotesContextProvider>} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

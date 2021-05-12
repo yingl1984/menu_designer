@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import conf from "../../src/config";
+import conf from "../config";
 import fetchCall from "../helpers/fetchData"
 // import './NoteView.css';
 
-class NoteView extends Component {
+class DishDetails extends Component {
   state={
     status:"",
     price:"",
@@ -72,10 +72,6 @@ class NoteView extends Component {
   }
 
   render() {
-    let isRent = false;        
-          if(this.state.status === 'rent'){
-            isRent = true;
-          }
           
     return (      
       <div className="noteView">
@@ -88,10 +84,10 @@ class NoteView extends Component {
           <section className = "item container">
             
             <form>
-            <h2>Property Details</h2>
+            <h2>Dish Details</h2>
               <div className="row">
                 <div className="col-25">
-                  <label htmlFor="status">Status </label> 
+                  <label htmlFor="status">Dish Name </label> 
                 </div>
                 <div className="col-75">
                   <input type="text" id="status" name="status" value={this.state.status} disabled onChange={(e)=>this.updateInput(e)}></input>
@@ -100,10 +96,19 @@ class NoteView extends Component {
 
               <div className="row">
                 <div className="col-25">
-                  {isRent && <label htmlFor="price">Price </label>}
+                  <label htmlFor="price">Price </label>
                 </div>
                 <div className="col-75">
-                  {isRent && <input type="number" id="price" name="price" value={this.state.price} disabled onChange={(e)=>this.updateInput(e)}></input>}
+                  <input type="number" id="price" name="price" value={this.state.price} disabled onChange={(e)=>this.updateInput(e)}></input>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-25">
+                  <label htmlFor="price">Rate </label>
+                </div>
+                <div className="col-75">
+                  <input type="number" id="price" name="price" value={this.state.price} disabled onChange={(e)=>this.updateInput(e)}></input>
                 </div>
               </div>
 
@@ -130,4 +135,4 @@ class NoteView extends Component {
         }  
 }
 
-export default NoteView;
+export default DishDetails;

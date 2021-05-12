@@ -2,14 +2,14 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import PropertyList from './pages/PropertyList';
+import MenuList from './pages/MenuList';
 
 class App extends Component {
   render(){
     return (
       <main className="app">
         <Header />
-          <PropertyList />
+          <MenuList />
         <Footer />
       </main>
     )

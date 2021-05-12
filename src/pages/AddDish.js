@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { NotesContext } from '../context/NotesContext';
 // import './Addnote.css';
 
-class Addnote extends Component {
+class AddDish extends Component {
     render() { 
         return ( 
             <NotesContext.Consumer>
@@ -21,10 +21,10 @@ class Addnote extends Component {
 
                                 <section className = "item container">
                                     <form onSubmit={(e) => addNote(e) }>
-                                    <h2>Add A New Note</h2>
+                                    <h2>Add A New Dish</h2>
                                     <div className="row">
                                     <div className="col-25">
-                                        <label htmlFor="address">Address </label>
+                                        <label htmlFor="address">Dish Name </label>
                                     </div>
                                     <div className="col-75">
                                         <input type="text" id="address" name="address" required onChange={handleInput}></input>
@@ -33,28 +33,10 @@ class Addnote extends Component {
 
                                 <div className="row">
                                     <div className="col-25">
-                                        <label htmlFor="state">State </label>
+                                        <label htmlFor="state">Rate </label>
                                     </div>
                                     <div className="col-75">
                                         <input type="text" id="state" name="state" required onChange={handleInput}></input>
-                                    </div>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col-25">
-                                        <label htmlFor="zipcode">Zipcode </label>
-                                    </div>
-                                    <div className="col-75">
-                                        <input type="text" id="zipcode" name="zipcode" required onChange={handleInput}></input>
-                                    </div>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col-25">
-                                        <label htmlFor="status">Rent/Vacant </label>
-                                    </div>
-                                    <div className="col-75">
-                                        <input type="text" id="status" name="status" required onChange={handleInput}></input>
                                     </div>
                                 </div>
 
@@ -92,4 +74,4 @@ class Addnote extends Component {
     }
 }
 
-export default Addnote;
+export default AddDish;
