@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import conf from "../../src/config";
 import fetchCall from "../helpers/fetchData"
-import './NoteView.css';
+// import './NoteView.css';
 
 class NoteView extends Component {
   state={

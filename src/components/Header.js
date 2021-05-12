@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
-import "./Header.css";
+// import "./Header.css";
 import pencilLogo from '../images/smartphone.png'
 
 class Header extends Component {
