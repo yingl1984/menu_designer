@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import { NotesContext } from '../context/NotesContext';
-import './PropertyList.css';
+// import './PropertyList.css';
 
 class PropertyList extends Component {  
     render() { 

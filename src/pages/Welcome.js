@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import {NavLink} from 'react-router-dom';
-import './Welcome.css';
+// import './Welcome.css';
 
 class Welcome extends Component {
     render() { 

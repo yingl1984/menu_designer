@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NotesContext } from '../context/NotesContext';
-import './Addnote.css';
+// import './Addnote.css';
 
 class Addnote extends Component {
     render() { 
