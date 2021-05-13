@@ -27,14 +27,14 @@ class MenuList extends Component {
                     return (
                         <div className="notesList">
                             <div className="List-header">
-                                    <h2>
-                                        Menu List
-                                    </h2>
+                                <h2>
+                                    Menu List
+                                </h2>
                             </div>
                             <section className="List">
                                 {record}
                             </section>
-                            <button className = 'box'><NavLink to="/addNote" style={{ textDecoration: 'none' }} className="link">Add</NavLink></button>
+                            <button className = 'box'><NavLink to="/addDish" style={{ textDecoration: 'none' }} className="link">Add</NavLink></button>
                         </div>
                       );
                 }
