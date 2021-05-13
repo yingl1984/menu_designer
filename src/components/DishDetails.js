@@ -3,28 +3,30 @@ import Header from './Header';
 import Footer from './Footer';
 import conf from "../config";
 import fetchCall from "../helpers/fetchData"
-// import './NoteView.css';
+
 
 class DishDetails extends Component {
   state={
-    status:"",
+    name:"",
     price:"",
+    rate:"",
     comments:""
   }
   
   async getData(){
     try{
         const id = this.props.match.params.id;
-        let notes = await (await fetchCall(`${conf.noteapi}/${id}`)).json();
-        if(!notes)
+        let dishes = await (await fetchCall(`${conf.noteapi}/${id}`)).json();
+        if(!dishes)
         {
             throw new Error("Crashed!");
         }
         this.state.comments = ""
         this.setState({
-            status:notes.status,
-            price:notes.price,
-            comments:notes.comments
+            name:dishes.name,
+            price:dishes.price,
+            rate:dishes.rate,
+            comments:dishes.comments
         });
     }
     catch(err)
@@ -46,10 +48,9 @@ class DishDetails extends Component {
 
   updateInputStatus = async(e)=>{
     e.preventDefault();
-    document.getElementById("status").removeAttribute("disabled");
-    if(document.getElementById("price")){
-      document.getElementById("price").removeAttribute("disabled");
-    }
+    document.getElementById("name").removeAttribute("disabled");
+    document.getElementById("price").removeAttribute("disabled");
+    document.getElementById("rate").removeAttribute("disabled");
     document.getElementById("comments").removeAttribute("disabled");
   }
 
@@ -57,18 +58,19 @@ class DishDetails extends Component {
     e.preventDefault();
 
     const id = this.props.match.params.id;
-    const newNote = JSON.stringify({
-      "status":this.state.status,
+    const newDish = JSON.stringify({
+      "name":this.state.name,
       "price":this.state.price,
+      "rate":this.state.rate,
       "comments": this.state.comments
     })
-    let updatedStatus = await (await fetchCall(`${conf.noteapi}/${id}`, 'PATCH', newNote ));
+    let updatedStatus = await (await fetchCall(`${conf.noteapi}/${id}`, 'PATCH', newDish ));
     if(updatedStatus.ok)
       {
-          alert("Note updated!");
+          alert("Dish updated!");
       }
     this.getData();
-    window.location.replace("/notebook");
+    window.location.replace("/menu");
   }
 
   render() {
@@ -90,7 +92,7 @@ class DishDetails extends Component {
                   <label htmlFor="status">Dish Name </label> 
                 </div>
                 <div className="col-75">
-                  <input type="text" id="status" name="status" value={this.state.status} disabled onChange={(e)=>this.updateInput(e)}></input>
+                  <input type="text" id="name" name="name" value={this.state.name} disabled onChange={(e)=>this.updateInput(e)}></input>
                 </div>
               </div>
 
@@ -108,7 +110,7 @@ class DishDetails extends Component {
                   <label htmlFor="price">Rate </label>
                 </div>
                 <div className="col-75">
-                  <input type="number" id="price" name="price" value={this.state.price} disabled onChange={(e)=>this.updateInput(e)}></input>
+                  <input type="number" id="rate" name="rate" value={this.state.rate} disabled onChange={(e)=>this.updateInput(e)}></input>
                 </div>
               </div>
 

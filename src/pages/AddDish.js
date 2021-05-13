@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NotesContext } from '../context/NotesContext';
-// import './Addnote.css';
 
 class AddDish extends Component {
     render() { 
@@ -24,28 +23,28 @@ class AddDish extends Component {
                                     <h2>Add A New Dish</h2>
                                     <div className="row">
                                     <div className="col-25">
-                                        <label htmlFor="address">Dish Name </label>
+                                        <label htmlFor="name">Dish Name </label>
                                     </div>
                                     <div className="col-75">
-                                        <input type="text" id="address" name="address" required onChange={handleInput}></input>
+                                        <input type="text" id="name" name="name" required onChange={handleInput}></input>
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-25">
-                                        <label htmlFor="state">Rate </label>
-                                    </div>
-                                    <div className="col-75">
-                                        <input type="text" id="state" name="state" required onChange={handleInput}></input>
-                                    </div>
-                                </div>
-
-                                <div className="row">
-                                    <div className="col-25">
-                                        <label htmlFor="price">Price </label>
+                                        <label htmlFor="state">Price </label>
                                     </div>
                                     <div className="col-75">
                                         <input type="number" id="price" name="price" required onChange={handleInput}></input>
+                                    </div>
+                                </div>
+
+                                <div className="row">
+                                    <div className="col-25">
+                                        <label htmlFor="price">Rate </label>
+                                    </div>
+                                    <div className="col-75">
+                                        <input type="number" id="rate" name="rate" required onChange={handleInput}></input>
                                     </div>
                                 </div>
 

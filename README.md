@@ -1,8 +1,9 @@
-# Rental Property Notebook
+# Restaurant Menu Designer
 
-Any Real Estate investor can use this notebook to track their properties' status, expecailly the rental property manager. You can clearly view all your managed properties in one place. When you take over a new property, just add a new record into your notebook. You can also update the price or other rental information, even remove the property record from the notebook whenever you want.
+Restaurant Menu Design is a tool to design a menu for a restaurant.
+In the menu list page, user will have a clear view of all their dishes in the menu now. They can Add or Delete a dish conveniently.After clicking each dish's link, user will drill down to the detail page to review the dish's detail information. They also can update the detail information of that dish.
 
-Check it out: [Rental Property Notebook](https://rental-property-notebook-master-johnakhilomen.vercel.app/).
+Check it out: [Restaurant Menu Designer](https://rental-property-notebook-master-johnakhilomen.vercel.app/).
 
 ## Usage
 1. Welcome Page

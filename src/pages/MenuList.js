@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import { NotesContext } from '../context/NotesContext';
-// import './PropertyList.css';
 
 class MenuList extends Component {  
     render() { 
@@ -9,15 +8,15 @@ class MenuList extends Component {
         <NotesContext.Consumer>
             {
                 (ctx)=> {
-                    const {notes,removeNote} = ctx;
-                     const record=notes.map(p => {
-                        const {id,address,state,zipcode} = p;
+                    const {dishes,removeNote} = ctx;
+                     const record=dishes.map(p => {
+                        const {id,name} = p;
                         return (
                             <div className='List-cards' key={p.id}>
                                 <div className='Card'>
                                     <button className='List-add-button' onClick={()=>removeNote(id)}>remove</button>
                                     <NavLink to={`/dish/${id}`} className="link" style={{ textDecoration: 'none' }}>                   
-                                        Dish Name: {address}, Picture: {state}                                                                    
+                                        Dish Name: {name}                                                                    
                                     </NavLink>
                                 </div>   
                             </div>

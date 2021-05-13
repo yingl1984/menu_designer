@@ -6,24 +6,22 @@ export const NotesContext = createContext();
 
 class NotesContextProvider extends Component{
     state={
-        notes:[],
-        address:"",
-        state:"",
-        zipcode:"",
-        status:"",
+        dishes:[],
+        name:"",
         price:"",
+        rate:"",
         comments:""
     }
 
    async getData(){
     try{
-        let notes = await (await fetchCall(conf.noteapi)).json();
-        if(!notes)
+        let dishes = await (await fetchCall(conf.noteapi)).json();
+        if(!dishes)
         {
             throw new Error("Crashed!");
         }
         this.setState({
-            notes:notes
+            dishes:dishes
         });
     }
     catch(err)
@@ -40,8 +38,8 @@ class NotesContextProvider extends Component{
         let deleted = await fetchCall(`${conf.noteapi}/${id}`, 'DELETE');
         if(deleted)
         {  
-            alert('Note with id '+ id + " was deleted")
-            window.location.replace("/notebook");
+            alert('Dish with id '+ id + " was deleted")
+            window.location.replace("/menu");
         }
     }
     
@@ -55,22 +53,19 @@ class NotesContextProvider extends Component{
     addNote = async (e) => {
         e.preventDefault();
         
-        const newNote = JSON.stringify({
-            "address":this.state.address,
-            "state": this.state.state,
-            "zipcode": this.state.zipcode,
-            "status":this.state.status,
+        const newDish = JSON.stringify({
+            "name":this.state.name,
             "price":this.state.price,
+            "rate":this.state.rate,
             "comments": this.state.comments,
-            "property_id":this.state.property_id
         }) 
-        let notes = await (await fetchCall(conf.noteapi, 'POST', newNote )).json();
-        if(notes)
+        let dishes = await (await fetchCall(conf.noteapi, 'POST', newDish )).json();
+        if(dishes)
         {
-            alert("Note added!");
+            alert("Dish added!");
         }
         this.getData();
-        window.location.replace("/notebook");
+        window.location.replace("/menu");
     };
 
     render() { 
