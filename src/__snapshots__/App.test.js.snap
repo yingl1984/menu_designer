@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders APP component without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`renders Footer component without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`renders Header component without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`renders NoteView component without crashing 1`] = `ShallowWrapper {}`;
