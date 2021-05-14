@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NotesContext } from '../context/NotesContext';
+import './AddDish.css';
 
 class AddDish extends Component {
     render() { 
@@ -35,16 +36,16 @@ class AddDish extends Component {
                                         <label htmlFor="state">Price </label>
                                     </div>
                                     <div className="col-75">
-                                        <input type="number" id="price" name="price" required onChange={handleInput}></input>
+                                        <input type="number" step="0.01" id="price" name="price" required onChange={handleInput}></input>
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-25">
-                                        <label htmlFor="price">Rate </label>
+                                        <label htmlFor="price">Rate(1 to 5) </label>
                                     </div>
                                     <div className="col-75">
-                                        <input type="number" id="rate" name="rate" required onChange={handleInput}></input>
+                                        <input type="number" id="rate" name="rate" min="1" max="5" required onChange={handleInput}></input>
                                     </div>
                                 </div>
 

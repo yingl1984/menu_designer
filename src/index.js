@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import NotesContextProvider from './context/NotesContext';
 import DishDetails from './components/DishDetails'
 import AddDish from './pages/AddDish'
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>

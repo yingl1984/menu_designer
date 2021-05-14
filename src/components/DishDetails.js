@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import conf from "../config";
 import fetchCall from "../helpers/fetchData"
-
+import './DishDetails.css';
 
 class DishDetails extends Component {
   state={
@@ -12,7 +12,7 @@ class DishDetails extends Component {
     rate:"",
     comments:""
   }
-  
+
   async getData(){
     try{
         const id = this.props.match.params.id;
@@ -78,6 +78,7 @@ class DishDetails extends Component {
     return (      
       <div className="noteView">
         <Header></Header>
+        
         <div className = "group">
           
           <section className = "item">
@@ -101,16 +102,19 @@ class DishDetails extends Component {
                   <label htmlFor="price">Price </label>
                 </div>
                 <div className="col-75">
-                  <input type="number" id="price" name="price" value={this.state.price} disabled onChange={(e)=>this.updateInput(e)}></input>
+                  <input type="number" step="0.01" id="price" name="price" value={this.state.price} disabled onChange={(e)=>this.updateInput(e)}></input>
                 </div>
               </div>
 
               <div className="row">
                 <div className="col-25">
-                  <label htmlFor="price">Rate </label>
+                  <label htmlFor="price">Rate(1 to 5) </label>
                 </div>
                 <div className="col-75">
-                  <input type="number" id="rate" name="rate" value={this.state.rate} disabled onChange={(e)=>this.updateInput(e)}></input>
+                  <input type="number" id="rate" name="rate" min="1" max="5" value={this.state.rate} disabled onChange={(e)=>this.updateInput(e)}></input>
+                </div>
+                <div>
+  
                 </div>
               </div>
 

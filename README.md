@@ -7,31 +7,31 @@ Check it out: [Restaurant Menu Designer](https://rental-property-notebook-master
 
 ## Usage
 1. Welcome Page
-<!-- ![Welcome page](/src/images/Welcome.png) -->
--   Click the "Start" button to load the property list.
+![Welcome page](/src/images/Welcome.png)
+-   Click the "Start" button to load the menu list.
 
-2. Property List
-<!-- ![Property List](/src/images/PropertyList.png) -->
--   Cilck the note to navigate to the property details page.
--   Click the "Add" button to add a new note.
--   Click the "Remove" button to delete a note.
+2. Menu List
+![Menu List](/src/images/MenuList.png)
+-   Cilck the dish to navigate to the dish details page.
+-   Click the "Add" button to add a new dish.
+-   Click the "Remove" button to delete a dish.
 
-2. Property Details
-<!-- ![Add a new note](/src/images/Update.png) -->
+2. Dish Details
+![Dish Details](/src/images/DishDetail.png)
 -   Click the "Update" button to update the detail information
 
-3. Add a new note
-<!-- ![Add a new note](/src/images/Add.png) -->
+3. Add a new dish
+![Add a new dish](/src/images/add.png)
 
 ## API Documentation
 -   Heroku server
-    > (https://rental-property-notebook-master-johnakhilomen.vercel.app/)
--   Get notes list
-    > (https://rental-property-notebook-master-johnakhilomen.vercel.app/api/notes)
--   Post a note
-    > (https://rental-property-notebook-master-johnakhilomen.vercel.app/api/notes)
--   Get/Delete/Update specific note through id
-    > (https://rental-property-notebook-master-johnakhilomen.vercel.app/api/notes/5)
+    > (https://stark-stream-92628.herokuapp.com/)
+-   Get menu list
+    > (https://stark-stream-92628.herokuapp.com/api/menu/api/menu)
+-   Post a dish
+    > (https://stark-stream-92628.herokuapp.com/api/menu/api/menu)
+-   Get/Delete/Update specific dish through id
+    > (https://stark-stream-92628.herokuapp.com/api/menu/api/dish/5)
 
 ## The technology I used in this project
 ```python

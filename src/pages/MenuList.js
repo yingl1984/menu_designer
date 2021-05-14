@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import { NotesContext } from '../context/NotesContext';
+import './MenuList.css';
 
 class MenuList extends Component {  
     render() { 
