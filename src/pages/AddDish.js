@@ -22,7 +22,9 @@ class AddDish extends Component {
                                 <section className = "item container">
                                     <form onSubmit={(e) => addNote(e) }>
                                     <h2>Add A New Dish</h2>
-                                    <div className="row">
+                                
+                                {/* Dish Name */}
+                                <div className="row">
                                     <div className="col-25">
                                         <label htmlFor="name">Dish Name </label>
                                     </div>
@@ -30,7 +32,7 @@ class AddDish extends Component {
                                         <input type="text" id="name" name="name" required onChange={handleInput}></input>
                                     </div>
                                 </div>
-
+                                {/* Price */}
                                 <div className="row">
                                     <div className="col-25">
                                         <label htmlFor="state">Price </label>
@@ -39,7 +41,7 @@ class AddDish extends Component {
                                         <input type="number" step="0.01" id="price" name="price" required onChange={handleInput}></input>
                                     </div>
                                 </div>
-
+                                {/* Rate */}
                                 <div className="row">
                                     <div className="col-25">
                                         <label htmlFor="price">Rate(1 to 5) </label>
@@ -48,7 +50,7 @@ class AddDish extends Component {
                                         <input type="number" id="rate" name="rate" min="1" max="5" required onChange={handleInput}></input>
                                     </div>
                                 </div>
-
+                                {/* Comments */}
                                 <div className="row">
                                     <div className="col-25">
                                         <label htmlFor="comments">Comments </label>
@@ -57,7 +59,7 @@ class AddDish extends Component {
                                         <textarea id="comments" name="comments" rows="5" cols="33" onChange={handleInput}></textarea>
                                     </div>
                                 </div>
-
+                                {/* Add button */}
                                 <div className="row">
                                     <button type="submit">Add</button>
                                 </div>

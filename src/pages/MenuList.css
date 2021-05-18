@@ -4,6 +4,7 @@
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+/* Style the list */
 .List-cards {
     background-color: rgba(231, 226, 226, 0.822);
     padding: 0 6px 4px;
@@ -16,95 +17,98 @@
     overflow: auto;
   }
 
-  .List {
-    min-width: 218px;
-  }
-  
-  .List:not(:first-of-type) {
-    margin-left: 8px;
-  }
-  .List-header h2 {
-    margin: 0;
-  }
-  
-  .List-header h2 {
-    font-size: 18px;
-    padding: 10px 8px 8px;
-  }
-  
+.List {
+  min-width: 218px;
+}
 
-  
-  .List-header {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-  }
+.List:not(:first-of-type) {
+  margin-left: 8px;
+}
 
-  .List-add-button {
-    background: none;
-    border: none;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 5px 6px;
-    display: block;
-  }
+/* Style the list header */
+.List-header h2 {
+  margin: 0;
+}
   
-  .List-add-button:hover {
-    cursor: pointer;
-  }
+.List-header h2 {
+  font-size: 18px;
+  padding: 10px 8px 8px;
+}
 
-  .Card button {
-    appearance: auto;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    background-color: -internal-light-dark(rgb(12, 150, 81), rgb(59, 59, 59));
-    box-sizing: border-box;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+.List-header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.List-header,
+.List-cards {
+  background-color: rgba(231, 226, 226, 0.822);
+  padding: 0 6px 4px;
+}
+
+/* Style the remove button */
+.List-add-button {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 6px;
+  display: block;
+}
+  
+.List-add-button:hover {
+  cursor: pointer;
+}
+/* Style the Add button  */
+.Card button {
+  appearance: auto;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(12, 150, 81), rgb(59, 59, 59));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
 }
 
 .Card {
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 1px 0 rgba(9,45,66,.25);
-    padding: 8px;
-    color: #17394d;
-  }
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(9,45,66,.25);
+  padding: 8px;
+  color: #17394d;
+}
   
-  .Card {
-    margin-bottom: 10px;
-  }
-  
-  .Card h3 {
-    font-size: 14px;
-    margin:0px;
-    margin-bottom: 4px;
-  }
-  
-  .Card button {
-    float: right;
-    background-color: #04aa6de8;
-    border-radius: 6px;
-  }
-  
-  .List-header,
-  .List-cards {
-    background-color: rgba(231, 226, 226, 0.822);
-    padding: 0 6px 4px;
-  }
+.Card {
+  margin-bottom: 10px;
+}
+
+.Card h3 {
+  font-size: 14px;
+  margin:0px;
+  margin-bottom: 4px;
+}
+
+.Card button {
+  float: right;
+  background-color: #04aa6de8;
+  border-radius: 6px;
+}
+
+
 
 
 

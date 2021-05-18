@@ -11,14 +11,14 @@ class Welcome extends Component {
             
             <div className="welcome">
                 <Header></Header>
-        
+                {/* Brief introduction  */}
                 <section className="item">
                    <h2> What is Restaurant Menu Design?  </h2>
                     <p>Restaurant Menu Design is a tool to design a menu for a restaurant.</p>
                     <p>In the menu list page, user will have a clear view of all their dishes in the menu now. They can Add or Delete a dish conveniently. 
                        After clicking each dish's link, user will drill down to the detail page to review the dish's detail information. They also can update the detail information of that dish.</p>
                 </section>
-               
+               {/* Demo video */}
                 <section className="item">
                     <h2>Demo </h2>  
                     <video width="55%" controls>

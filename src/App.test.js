@@ -8,6 +8,7 @@ import Welcome from '../src/pages/Welcome';
 import MenuList from '../src/pages/MenuList';
 import AddDish from '../src/pages/AddDish';
 
+//App
 it('renders APP component without crashing', () => {
   const wrapper = shallow(<App />)
   expect(wrapper).toMatchSnapshot()
