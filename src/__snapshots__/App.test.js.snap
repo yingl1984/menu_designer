@@ -2,8 +2,14 @@
 
 exports[`renders APP component without crashing 1`] = `ShallowWrapper {}`;
 
+exports[`renders AddDish component without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`renders DishDetails component without crashing 1`] = `ShallowWrapper {}`;
+
 exports[`renders Footer component without crashing 1`] = `ShallowWrapper {}`;
 
 exports[`renders Header component without crashing 1`] = `ShallowWrapper {}`;
 
-exports[`renders NoteView component without crashing 1`] = `ShallowWrapper {}`;
+exports[`renders MenuList component without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`renders Welcome component without crashing 1`] = `ShallowWrapper {}`;
