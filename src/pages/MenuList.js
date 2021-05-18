@@ -10,6 +10,7 @@ class MenuList extends Component {
             {
                 (ctx)=> {
                     const {dishes,removeNote} = ctx;
+                    // Get each dish's information 
                      const record=dishes.map(p => {
                         const {id,name} = p;
                         return (
