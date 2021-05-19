@@ -22,7 +22,7 @@ class Welcome extends Component {
                 <section className="item">
                     <h2>Demo </h2>  
                     <video width="55%" controls>
-                    <source src="https://www.youtube.com/watch?v=IIC1h6wmI_c" />
+                    <source src="/video/demo.mp4" />
                     Your browser does not support HTML video.
                     </video>
                     
