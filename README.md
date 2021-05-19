@@ -3,7 +3,7 @@
 Restaurant Menu Design is a tool to design a menu for a restaurant.
 In the menu list page, user will have a clear view of all their dishes in the menu now. They can Add or Delete a dish conveniently.After clicking each dish's link, user will drill down to the detail page to review the dish's detail information. They also can update the detail information of that dish.
 
-Check it out: [Restaurant Menu Designer](https://rental-property-notebook-master-johnakhilomen.vercel.app/).
+Check it out: [Restaurant Menu Designer](https://menu-designer-projecta.vercel.app/).
 
 ## Usage
 1. Welcome Page
