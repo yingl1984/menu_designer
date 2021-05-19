@@ -20,7 +20,7 @@ let fetchCall = (api, method, body) => {
        return fetch(api, {
            method: method,
            body: body,
-           headers: {'Content-Type': 'application/json'}
+           headers: {"Content-Type": "application/json"}
        });
       }
     }
@@ -28,6 +28,6 @@ let fetchCall = (api, method, body) => {
    {
      return err.message;
    }
-}
+};
 
 export default fetchCall;

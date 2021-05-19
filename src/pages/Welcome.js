@@ -1,8 +1,8 @@
-import './Welcome.css';
-import React, { Component } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import {NavLink} from 'react-router-dom';
+import "./Welcome.css";
+import React, { Component } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import {NavLink} from "react-router-dom";
 
 
 class Welcome extends Component {
@@ -29,7 +29,7 @@ class Welcome extends Component {
                 </section>
 
                 <section className="box item" style={{margin:"10px auto"}}>
-                    <NavLink to='/menu' style={{ textDecoration: 'none' }} className="link" ><h2>Start</h2></NavLink>
+                    <NavLink to='/menu' style={{ textDecoration: "none" }} className="link" ><h2>Start</h2></NavLink>
                 </section>
 
                 <Footer></Footer>

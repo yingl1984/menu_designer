@@ -1,6 +1,6 @@
-import React, { Component, createContext } from 'react';
+import React, { Component, createContext } from "react";
 import conf from "../config";
-import fetchCall from "../helpers/fetchData"
+import fetchCall from "../helpers/fetchData";
 
 export const NotesContext = createContext();
 
@@ -35,10 +35,10 @@ class NotesContextProvider extends Component{
     } 
 
     removeNote=async(id)=>{
-        let deleted = await fetchCall(`${conf.noteapi}/${id}`, 'DELETE');
+        let deleted = await fetchCall(`${conf.noteapi}/${id}`, "DELETE");
         if(deleted)
         {  
-            alert('Dish with id '+ id + " was deleted")
+            alert("Dish with id "+ id + " was deleted");
             window.location.replace("/menu");
         }
     }
@@ -58,8 +58,8 @@ class NotesContextProvider extends Component{
             "price":this.state.price,
             "rate":this.state.rate,
             "comments": this.state.comments,
-        }) 
-        let dishes = await (await fetchCall(conf.noteapi, 'POST', newDish )).json();
+        }); 
+        let dishes = await (await fetchCall(conf.noteapi, "POST", newDish )).json();
         if(dishes)
         {
             alert("Dish added!");

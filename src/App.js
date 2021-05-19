@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import MenuList from './pages/MenuList';
-import './App.css';
+import React, { Component } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MenuList from "./pages/MenuList";
+import "./App.css";
 
 class App extends Component {
   render(){
@@ -12,7 +12,7 @@ class App extends Component {
           <MenuList />
         <Footer />
       </main>
-    )
+    );
   }
 }
 

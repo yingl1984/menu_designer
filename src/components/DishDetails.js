@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import React, { Component } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 import conf from "../config";
-import fetchCall from "../helpers/fetchData"
-import './DishDetails.css';
+import fetchCall from "../helpers/fetchData";
+import "./DishDetails.css";
 
 class DishDetails extends Component {
   state={
@@ -21,7 +21,7 @@ class DishDetails extends Component {
         {
             throw new Error("Crashed!");
         }
-        this.state.comments = ""
+        this.state.comments = "";
         this.setState({
             name:dishes.name,
             price:dishes.price,
@@ -63,8 +63,8 @@ class DishDetails extends Component {
       "price":this.state.price,
       "rate":this.state.rate,
       "comments": this.state.comments
-    })
-    let updatedStatus = await (await fetchCall(`${conf.noteapi}/${id}`, 'PATCH', newDish ));
+    });
+    let updatedStatus = await (await fetchCall(`${conf.noteapi}/${id}`, "PATCH", newDish ));
     if(updatedStatus.ok)
       {
           alert("Dish updated!");
@@ -137,7 +137,7 @@ class DishDetails extends Component {
           <Footer></Footer>
       </div>
              
-          )
+          );
         }  
 }
 

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { NotesContext } from '../context/NotesContext';
-import './AddDish.css';
+import { NotesContext } from "../context/NotesContext";
+import "./AddDish.css";
 
 class AddDish extends Component {
     render() { 
@@ -68,7 +68,7 @@ class AddDish extends Component {
                             </div>
                             <Footer></Footer>
                         </div>
-                    )
+                    );
                 }
                 }  
             </NotesContext.Consumer>
